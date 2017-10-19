@@ -27,7 +27,7 @@ public class ProductCategory {
 
     private Date createTime;            //创建时间
 
-    private Date uodateTime;            //更新时间
+    private Date updateTime;            //更新时间
 
     public ProductCategory() {
     }
