@@ -12,6 +12,7 @@ import java.util.Date;
 
 /**
  * Created by sunzhenzhou on 2017/10/18.
+ * 订单
  */
 @Entity
 @Data
