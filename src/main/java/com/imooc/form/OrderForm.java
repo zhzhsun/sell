@@ -1,10 +1,7 @@
 package com.imooc.form;
 
-import com.imooc.dto.CartDTO;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
-
-import java.util.List;
 
 /**
  * Created by sunzhenzhou on 2017/11/14.
@@ -40,5 +37,5 @@ public class OrderForm {
      * 购物车
      */
     @NotEmpty(message = "购物车不能为空")
-    private List<CartDTO> items;
+    private String items;
 }
