@@ -4,8 +4,15 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://192.168.23.4/sell?characterEncoding=utf-8&useSSL=false
+
+
   jpa:
     show-sql: true
+
+  # 返回前端字段若为null则去除掉
+  jackson:
+    default-property-inclusion: non_null
+
 server:
   context-path: /sell
   port: 9527
