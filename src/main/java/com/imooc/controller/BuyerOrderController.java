@@ -73,5 +73,18 @@ public class BuyerOrderController {
     }
 
     //3.订单详情
+    @GetMapping("detail")
+    public ResultVO<List<OrderDTO>> detail(@RequestParam("openid") String openid,
+                                           @RequestParam("orderId") String orderId){
+        //TODO openid传过来为了安全考虑，后期加上
+        if (StringUtils.isEmpty(openid)){
+            log.error("【查询订单详情】openid为空");
+            throw new SellException(ResultEnum.PARAM_ERROR);
+        }
+
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        return ResultVOUtil.success(orderDTO);
+    }
+
     //4.取消订单
 }
