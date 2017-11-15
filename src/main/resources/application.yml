@@ -2,11 +2,12 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: ZHANGrui123
-    url: jdbc:mysql://rm-uf67mp6n8524klxqqo.mysql.rds.aliyuncs.com/sell?characterEncoding=utf-8&useSSL=false
+    password: 123456
+    url: jdbc:mysql://172.12.9.199/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
 server:
   context-path: /sell
+  port: 9527
 
 

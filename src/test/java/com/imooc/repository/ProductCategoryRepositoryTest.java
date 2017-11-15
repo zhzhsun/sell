@@ -29,7 +29,7 @@ public class ProductCategoryRepositoryTest {
     }
 
     @Test
-    @Transactional
+    //@Transactional
     public void saveTest(){
         ProductCategory productCategory = new ProductCategory("男生最爱",4);
 
